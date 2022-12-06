@@ -11,11 +11,12 @@
 	font-family: 'montserrat', sans-serif;
 }
 body {
-	background: var(--light);
-	color: var(--dark);
     align-items: center;
     justify-content: center;
-	background-color:#5b8bd6;
+	background-color:#708ab4;
+}
+::placeholder{
+	font-weight: lighter;
 }
 section {
 	margin-top: 2rem;
@@ -31,9 +32,9 @@ h2 {
 	margin-bottom: 0.5rem;
 }
 img {
-margin-top: 10px;
-border-radius: 1rem;
-margin-left: 0.5rem;
+	margin-top: 10px;
+	border-radius: 1rem;
+	margin-left: 0.5rem;
 }
 .header {
 	font-size: 2rem;
@@ -41,8 +42,8 @@ margin-left: 0.5rem;
 	color: var(--light);
 }
 .goal .header label {
-  margin-right: 1rem;
-  padding-bottom: 0.5rem;
+	margin-right: 1rem;
+	padding-bottom: 0.5rem;
 
 }
 .goal .title {
@@ -55,27 +56,28 @@ margin-left: 0.5rem;
 	border: 0;
 	border-radius: 0.3rem;
 	height:2rem ;
+	color: var(--dark);
 }
 .goal .title,
 .goal .title input {
-	color: var(--light);
 	font-size: 1.2rem;
 	font-weight: 700;
+	
 }
 .create-session input[type="text"] {
 	display: block;
 	width: 40%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
-	color: var(--light);
+	color: var(--dark);
 	background-color: var(--light);
 	border-radius: 0.5rem;
-  border: var(--grey);
+    border: var(--grey);
 	box-shadow: var(--shadow);
 	margin-bottom: 1.5rem;
 }
 label input[type="checkbox"] {
-  border: var(--bleue) 2px solid;
+  	border: var(--bleue) 2px solid;
 }
 .create-session input[type="submit"] {
 	display: block;
@@ -85,7 +87,7 @@ label input[type="checkbox"] {
 	color: var(--light);
 	background-color: var(--bleue);
 	border-radius: 0.5rem;
-  border: var(--grey);
+  	border: var(--grey);
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
 }
@@ -96,7 +98,7 @@ label input[type="checkbox"] {
 	margin: 1rem 0;
 } 
 .session-list h2 {
-font-weight: bold;
+	font-weight: bold;
 } 
 .session-list .session-item {
 	display: flex;
@@ -106,7 +108,7 @@ font-weight: bold;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1rem;
-  width: 40%;
+  	width: 40%;
 }
 .session-item label {
 	display: block;
@@ -119,9 +121,9 @@ font-weight: bold;
 .session-item .session-content input {
 	color: var(--dark);
 	font-size: 1.125rem;
-  width: 90%;
-  border: var(--grey) 1px solid;
-  border-color: var(--light);
+	width: 90%;
+	border: var(--grey) 1px solid;
+	border-color: var(--light);
 }
 .session-item .actions {
 	display: flex;
@@ -133,7 +135,7 @@ font-weight: bold;
 	border-radius: 0.20rem;
 	color: var(--light);
 	cursor: pointer;
-  border: 0;
+  	border: 0;
 	transition: 0.2s ease-in-out;
 }
 .session-item .actions button:hover {

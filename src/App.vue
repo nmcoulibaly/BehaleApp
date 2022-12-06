@@ -5,7 +5,7 @@ const content = ref('')
 const checked = ref(null)
 const numberPoints = ref(null)
 const session_ascending = computed(() => sessions.value.sort((a,b) => {
-  return b.createdAt - a.createdAt
+  return (b.createdAt - a.createdAt)
 
 }))
 const addSession = () =>{
@@ -19,7 +19,7 @@ const addSession = () =>{
     done: false,
   })
   content.value = '' 
-  numberPoints = numberPoints.value += 5
+  numberPoints.value += 5 
 }
 const removeSession = session => {
   sessions.value = sessions.value.filter(s => s !== session)
@@ -30,12 +30,11 @@ watch(sessions, (newValue) => {
 }, {deep: true})
 onMounted(() => {
   sessions.value = JSON.parse(localStorage.getItem('sessions')) || []
+  numberPoints.value = localStorage.getItem('numberPoints') || ''
 })
 watch(numberPoints, (newValue) => {
   localStorage.setItem('numberPoints', newValue)
-})
-onMounted(() =>{
-  numberPoints.value = localStorage.getItem('numberPoints' )
+
 })
 </script>
 
